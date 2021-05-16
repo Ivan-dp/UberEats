@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+.header {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.sign-in {
+  width: 78px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: #1d1d1d;
+  cursor: pointer;
+  outline: none;
+}
+
+.basket {
+  margin-right: 20px;
+  margin-left: 27px;
+  display: block;
+}
+
+.search-input {
+  margin-top: 128px;
+  width: 100%;
+  height: 24px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+  outline: none;
+
+  mix-blend-mode: normal;
+  opacity: 0.35;
+
+  color: #626262;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.search-input::placeholder {
+  padding-bottom: 20px;
+}
+
+.restaurants {
+  width: 100%;
+  margin-top: 56px;
+}
+
+.rest-title h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1d1d1d;
+  margin-bottom: 16px;
+}
+
+.main-card {
+  height: 366px;
+  margin-bottom: 16px;
+}
+
+.main-card:hover {
+  background: #f9f9f9;
+}
+
+figcaption {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin-top: 16px;
+}
+
+.kitchen {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+
+.time {
+  font-size: 13px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+
+.card-image {
+  height: 256px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* RESTAURANT.HTML */
+
+.hero {
+  background: url("../img/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 72px;
+  /* height: 364px; */
+}
+
+.hero-card {
+  margin: 80px auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 38px;
+  box-sizing: border-box;
+}
+
+/* .hero-card p {
+  display: block;
+} */
+
+.hero-card h1 {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #1d1d1d;
+  /* margin: auto; */
+}
+
+.hero-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+.kitchen {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.hero-time {
+  width: 100px;
+  height: 32px;
+  background: black;
+  border-radius: 16px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  padding: auto;
+  justify-content: center;
+}
+
+.hero-time p {
+  position: relative;
+  display: block;
+}
+
+/* FILTER */
+
+.filter {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+  /* margin-right: 40px; */
+}
+
+/* MAIN */
+
+.main {
+  margin-bottom: 50px;
+}
+
+/* SNACK */
+
+.snack {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+  margin-top: 16px;
+  background: #75757514;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.snack-name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+}
+
+.snack-description {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+}
+
+.snack_price {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+
+.snack_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 16px auto 16px 16px; */
+}
+
+.snack_title {
+  width: 100%;
+  margin: 16px auto auto 16px;
+}
+
+.snack_title p {
+  margin-bottom: 4px;
+}
+
+.snack_price {
+  width: 100%;
+  margin: auto auto 16px 16px;
+}
+
+.snack_img {
+  margin-left: 15px;
+}
+
+.snack_img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+
+footer {
+  background: #262626;
+  width: 100%;
+}
+
+.white-logo img {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+
+footer hr {
+  width: 100%;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
+/* ВЫПАДАЮЩИЙ СПИСОК */
+
+.language {
+  border: none;
+  background: #3b3b3b;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  width: 227px;
+  height: 40px;
+  outline: none;
+  padding-left: 16px;
+  margin-top: 40px;
+}
+
+.language option {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  outline: none;
+}
+
+.social {
+  width: 92px;
+  height: 60px;
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+.social p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.social-title {
+  display: inline-block;
+}
+
+.block {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 24px;
+  margin-bottom: 26px;
+}
+
+.uber-info {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.uber-info a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.app-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.app-store img {
+  margin: auto 20px;
+}
+
+.bottom-link {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: auto;
+}
+
+.bottom-link a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+}
+
+.topbutton {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 2px;
+  background: #59bd5a;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+
+  padding: auto;
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.topbutton img {
+  height: 25px;
+  width: 15px;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .block {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .social {
+    margin-bottom: 20px;
+  }
+
+  .move {
+    margin-top: 35px;
+  }
+  .bottom-link {
+    height: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  .filter {
+    display: none;
+  }
+  .rest-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .hero {
+    height: 255px;
+  }
+  .hero-card {
+    margin: 103px auto auto auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .snack {
+    height: 130px;
+  }
+
+  .snack_img img {
+    width: 135px;
+  }
+}
+
+@media (max-width: 410px) {
+  .hero-card {
+    align-items: center;
+  }
+  .hero-card h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .hero-card-bottom {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-time {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .snack {
+    height: 100px;
+  }
+
+  .snack_img img {
+    width: 105px;
+  }
+}
